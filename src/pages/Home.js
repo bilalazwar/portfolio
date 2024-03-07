@@ -20,7 +20,7 @@ export default function Home() {
             <div className='call'>
                 <p id='hi'>Hi, I am</p>
                 <h1 id='name'>Bilal Azwar</h1>
-                <p id='position'>Software Engineers</p>
+                <p id='position'>Software Engineer</p>
                 <p id='description'>I code to turn simple things to reality and love what I do.</p>
                 <h5>{windowWidth}</h5>
             </div>
