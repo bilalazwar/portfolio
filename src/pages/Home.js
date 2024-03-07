@@ -13,9 +13,9 @@ export default function Home() {
       <HomeHeader/>
       <section className='landingContent'>
       
-      <div className='profile'>
-        <img id='roundImage' src={Bilal} alt="Profile pic"/>
-      </div>
+        <div className='profile'>
+          <img id='roundImage' src={Bilal} alt="Profile pic"/>
+        </div>
         
         <div className='introductory'>
             <div className='call'>

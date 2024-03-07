@@ -42,8 +42,53 @@ a{
     margin-right: 13px;
 }
 
+.btnMenu .line{
+    width: 37px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: black;
+}
+#line1, #line2{
+    margin-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+
+
 @media (width< 973px){
     a {
+        display: none;
+    }
+    .btnMenu:hover {
+        #line2 {
+          display: none; /* Hide the second line on hover */
+        }
+        
+        animation-name: menu;
+        animation-duration: 2s;
+    }
+      
+    @keyframes menu {
+        from {
+          #line1 {
+            transform: rotateX(60deg); /* Rotate first line 60 degrees on X-axis */
+          }
+        }
+        to {
+          #line3 {
+            transform: rotateX(180deg); /* Rotate third line 60 degrees on Y-axis */
+          }
+        }
+    }
+}
+@media (width > 973px){
+    .btnMenu{
         display: none;
     }
 }

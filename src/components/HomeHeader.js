@@ -20,6 +20,11 @@ export default function HomeHeader() {
             <NavLink>BLOG</NavLink>
             <NavLink>CONTACT</NavLink>
         </div>
+        <div className='btnMenu'>
+          <div className='line' id='line1'></div>
+          <div className='line' id='line2'></div>
+          <div className='line' id='line3'></div>
+        </div>
     </div>
   )
 }
