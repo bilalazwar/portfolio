@@ -86,20 +86,22 @@
     .introductory{
         display: flex; /* Enable flexbox for the parent container */
         justify-content: center; /* Horizontally center the image */
+        margin-top: 1.6rem;
         
     }
     #hi{
-        font-size: 1.415rem;
+        font-size: 1.3rem;
     }
     
     #name{        
-        font-size: 3.5rem;
+        font-size: 3.46rem;
     }
     #position{
-        font-size: 1.8135rem;
+        font-size: 1.5rem;
     }
     #description{
-        font-size: 0.65rem;
+        font-size: 0.73rem;
+        margin-top: 0.35rem;
     }
 
 }
