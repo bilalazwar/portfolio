@@ -149,7 +149,20 @@ font must be to parent size like em
 when in another device default browser size in 15 px then adjust according to that 
 */
 
+.turnLine{
+    height: 200px;
+    width: 100%;
+}
+#horizontalLine{
+    
 
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;margin-top: 70px;
+    transform: rotateX(40deg);
+    transform: rotate(40deg);
+}
 
 
 

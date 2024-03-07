@@ -29,7 +29,11 @@ export default function Home() {
                   <label id='btnDownloadCv'>Download CV</label>
                   <label id='btnContactMe'>Contact Me</label>
                 </div>
+
             </div>
+          </div>
+          <div className='turnLine'>
+              <div id="horizontalLine"></div>
           </div>
 
       </section>

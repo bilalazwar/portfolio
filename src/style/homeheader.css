@@ -6,7 +6,7 @@
     /* background-color: rgba(236, 118, 66, 255); */
     width: 100%;
     height: 9vh;        /* viewport height */
-    padding: 0 7vw 0 6vw;     /* viewport width */
+    padding: 0 8vw 0 7vw;     /* viewport width */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -43,7 +43,7 @@ a{
 }
 
 .btnMenu .line{
-    width: 37px;
+    width: 40px;
     height: 4px;
     border-radius: 10px;
     background-color: black;
@@ -58,7 +58,28 @@ a{
 
 
 
+@media (width > 973px){
+    .btnMenu{
+        display: none;
+    }
 
+    /* .btnMenu:hover {
+
+        cursor: pointer;
+        .line{
+            position: fixed;
+        }
+        #line1{
+            display: none;
+        }
+        #line2{
+            transform: rotateZ(45deg);
+        }
+        #line3{
+            transform: rotateZ(-45deg);
+        }
+    } */
+}
 
 
 @media (width< 973px){
@@ -66,29 +87,48 @@ a{
         display: none;
     }
     .btnMenu:hover {
-        #line2 {
-          display: none; /* Hide the second line on hover */
+
+        cursor: pointer;
+        .line{
+            position: relative;
         }
-        
-        animation-name: menu;
-        animation-duration: 2s;
+        #line1{
+            display: none;
+        }
+        #line2{
+            position: absolute;
+            transition: 1s;
+            margin-bottom: 0;
+            transform: rotateZ(45deg);
+        }
+        #line3{
+            transition: 1s;
+            transform: rotateZ(-45deg);
+        }
     }
-      
-    @keyframes menu {
-        from {
-          #line1 {
-            transform: rotateX(60deg); /* Rotate first line 60 degrees on X-axis */
-          }
-        }
-        to {
-          #line3 {
-            transform: rotateX(180deg); /* Rotate third line 60 degrees on Y-axis */
-          }
-        }
-    }
+    
 }
-@media (width > 973px){
-    .btnMenu{
-        display: none;
-    }
+
+
+
+
+/* .btnMenu{
+    margin-right: 15px;
+} */
+
+
+
+
+/* .line{
+    
+    position: absolute;
 }
+#line1{
+    display: none;
+}
+#line2{
+    transform: rotateZ(45deg);
+}
+#line3{
+    transform: rotateZ(-45deg);
+} */
