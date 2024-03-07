@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import Avatar from'../images/avatar1.jpeg'
 
 import '../style/homeheader.css'
 
@@ -8,7 +9,8 @@ export default function HomeHeader() {
     <div className='fullHomeHeader'>
 
         <div className='leftNav'>
-            <h3>boll Bilal Azwar</h3>
+            <img id='avatarRound' src={Avatar} alt="Profile pic"/>
+            <h3>Mr.Bilal</h3>
         </div>
         <div className='rightNav'>
             <NavLink>HOME</NavLink>

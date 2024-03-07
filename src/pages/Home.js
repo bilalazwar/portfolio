@@ -5,6 +5,7 @@ import HomeHeader from '../components/HomeHeader'
 import '../style/home.css'
 import Bilal from'../images/roundImage.png'
 
+
 export default function Home() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   return (
@@ -23,6 +24,11 @@ export default function Home() {
                 <p id='position'>Software Engineer</p>
                 <p id='description'>I code to turn simple things to reality and love what I do.</p>
                 {/* <h5>{windowWidth}</h5> */}
+
+                <div className='btn'>
+                  <label id='btnDownloadCv'>Download CV</label>
+                  <label id='btnContactMe'>Contact Me</label>
+                </div>
             </div>
           </div>
 

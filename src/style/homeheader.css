@@ -20,6 +20,8 @@
 .leftNav{
     /* width: 55%; */
     /* border: 1px black solid; */
+    display: flex;
+    align-items: center;
 }
 .rightNav{
     /* width: 45%; */
@@ -32,6 +34,12 @@ a{
     text-decoration: none;
     color: rgb(90, 89, 89);
     margin-left: 2.8vw;
+}
+
+#avatarRound{
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 13px;
 }
 
 @media (width< 973px){

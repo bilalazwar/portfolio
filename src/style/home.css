@@ -53,6 +53,30 @@
 }
 
 
+/* below for the buttons */
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+#btnDownloadCv , #btnContactMe{
+    cursor: pointer;
+    padding: 15px 23px 15px 23px;
+    font-weight: bolder;
+    border-radius: 20px;
+    align-items: center;
+}
+#btnDownloadCv{
+    background-color:rgb(255, 148, 66);
+    color: white;
+}
+#btnContactMe{
+    border: 2px solid rgb(255, 148, 66);
+    color: rgb(50, 50, 104);
+}
+
+
 
 
 
