@@ -21,7 +21,7 @@ export default function Home() {
                 <p id='hi'>Hi, I am</p>
                 <h1 id='name'>Bilal Azwar</h1>
                 <p id='position'>Software Engineer</p>
-                <p id='description'>I code to turn simple things to reality and love what I do.</p>
+                <p id='description'>I code to turn simple things to reality and love what I do. Ha ha</p>
                 <h5>{windowWidth}</h5>
             </div>
           </div>
@@ -30,3 +30,7 @@ export default function Home() {
     </div>
   )
 }
+//making changes
+
+// npm run build
+// npm run deploy
