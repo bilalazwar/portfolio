@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* newly added */
+html {
+  font-size: 16px; /* Adjust as needed for your design */
+}
