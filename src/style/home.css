@@ -41,7 +41,7 @@
 #position{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 2.8135rem;;
+    font-size: 2.8135rem;
     color: black;
 }
 
@@ -66,6 +66,7 @@
         align-items: center;
         padding-left: 19.17vw;
     }
+    
 }
 
 /* less than */
@@ -86,6 +87,19 @@
         display: flex; /* Enable flexbox for the parent container */
         justify-content: center; /* Horizontally center the image */
         
+    }
+    #hi{
+        font-size: 1.415rem;
+    }
+    
+    #name{        
+        font-size: 3.5rem;
+    }
+    #position{
+        font-size: 1.8135rem;
+    }
+    #description{
+        font-size: 0.65rem;
     }
 
 }

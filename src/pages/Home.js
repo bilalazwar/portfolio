@@ -22,7 +22,7 @@ export default function Home() {
                 <h1 id='name'>Bilal Azwar</h1>
                 <p id='position'>Software Engineer</p>
                 <p id='description'>I code to turn simple things to reality and love what I do. Ha ha</p>
-                <h5>{windowWidth}</h5>
+                {/* <h5>{windowWidth}</h5> */}
             </div>
           </div>
 
