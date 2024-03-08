@@ -66,10 +66,12 @@
 #btnDownloadCv{
     background-color:rgb(255, 148, 66);
     color: white;
+    cursor: pointer;
 }
 #btnContactMe{
     border: 2px solid rgb(255, 148, 66);
     color: rgb(50, 50, 104);
+    cursor: pointer;
 }
 
 

@@ -1,10 +1,18 @@
 import React from 'react'
+import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import Avatar from'../images/avatar1.jpeg'
 
 import '../style/homeheader.css'
 
 export default function HomeHeader() {
+
+  const [isMenuClick,setMenuClick] = useState(false);
+
+  const handleMenuClick = () =>{
+    setMenuClick(!isMenuClick);
+  }
+
   return (
     <div className='fullHomeHeader'>
 
@@ -12,7 +20,7 @@ export default function HomeHeader() {
             <img id='avatarRound' src={Avatar} alt="Profile pic"/>
             <h3>Mr.Bilal</h3>
         </div>
-        <div className='rightNav'>
+        <div className={isMenuClick ? 'rightNavDisplay' : 'rightNav'}>
             <NavLink>HOME</NavLink>
             <NavLink>ABOUT</NavLink>
             <NavLink>PROJECTS</NavLink>
@@ -20,10 +28,10 @@ export default function HomeHeader() {
             <NavLink>BLOG</NavLink>
             <NavLink>CONTACT</NavLink>
         </div>
-        <div className='btnMenu'>
-          <div className='line' id='line1'></div>
-          <div className='line' id='line2'></div>
-          <div className='line' id='line3'></div>
+        <div className='btnMenu' onClick={handleMenuClick}>
+          <div className='line' id={isMenuClick ? 'line1' : 'x'}></div>
+          <div className='line' id={isMenuClick ? 'line2' : 'z'}></div>
+          <div className='line' id={isMenuClick ? 'line3' : 'y'}></div>
         </div>
     </div>
   )

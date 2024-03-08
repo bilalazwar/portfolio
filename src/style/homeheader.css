@@ -16,6 +16,7 @@
 
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 550;
+    /* box-sizing: border-box; */
 }
 .leftNav{
     /* width: 55%; */
@@ -42,13 +43,16 @@ a{
     margin-right: 13px;
 }
 
+
+/* menu button click */
+
 .btnMenu .line{
     width: 40px;
     height: 4px;
     border-radius: 10px;
     background-color: black;
 }
-#line1, #line2{
+#line1, #line2, #x, #z {
     margin-bottom: 4px;
 }
 
@@ -62,73 +66,61 @@ a{
     .btnMenu{
         display: none;
     }
-
-    /* .btnMenu:hover {
-
-        cursor: pointer;
-        .line{
-            position: fixed;
-        }
-        #line1{
-            display: none;
-        }
-        #line2{
-            transform: rotateZ(45deg);
-        }
-        #line3{
-            transform: rotateZ(-45deg);
-        }
-    } */
 }
 
 
 @media (width< 973px){
-    a {
+
+    /* when menu not clicked */
+    .rightNav{
+        display: none; /* hide menu items*/
+    }
+
+    .rightNavDisplay{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 260px;
+        height: 600px;
+        background-color: aquamarine;
+    }
+
+    .btnMenu:hover{
+        cursor: pointer;
+    }
+    .line{
+        position: relative;
+    }
+    #line1{
         display: none;
     }
-    .btnMenu:hover {
-
-        cursor: pointer;
-        .line{
-            position: relative;
-        }
-        #line1{
-            display: none;
-        }
-        #line2{
-            position: absolute;
-            transition: 1s;
-            margin-bottom: 0;
-            transform: rotateZ(45deg);
-        }
-        #line3{
-            transition: 1s;
-            transform: rotateZ(-45deg);
-        }
+    #line2{
+        position: absolute;
+        transition: 1s;
+        margin-bottom: 0;
+        transform: rotateZ(45deg);
     }
-    
+    #line3{
+        transition: 1s;
+        transform: rotateZ(-45deg);
+    }
+
+
+
+
+    /* for menu options */
+
+    /* .rightNav{
+        display: flex;
+        flex-direction: column;
+    } */
+
 }
 
 
 
 
-/* .btnMenu{
-    margin-right: 15px;
-} */
 
-
-
-
-/* .line{
-    
-    position: absolute;
-}
-#line1{
-    display: none;
-}
-#line2{
-    transform: rotateZ(45deg);
-}
-#line3{
-    transform: rotateZ(-45deg);
-} */
