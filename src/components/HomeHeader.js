@@ -23,7 +23,7 @@ export default function HomeHeader() {
         <div className={isMenuClick ? 'rightNavDisplay' : 'rightNav'}>
             <NavLink>HOME</NavLink>
             <NavLink>ABOUT</NavLink>
-            <NavLink>PROJECTS</NavLink>
+            <NavLink to="/project">PROJECTS</NavLink>
             <NavLink>RESUME</NavLink>
             <NavLink>BLOG</NavLink>
             <NavLink>CONTACT</NavLink>
