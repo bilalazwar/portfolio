@@ -43,18 +43,17 @@ export default function Home() {
 
             </div>
           </div>
-
-          <div className='About'>
-            
-                  <h3>Get To Know More</h3>
-                  <h1>About Me</h1>
-          </div>
-
       </section>
 
       <section className='contactInformation'>
-
+        
+        <div className='about'>
+              
+              <h5 className='subHeadingDesc'>Get To Know More</h5>
+              <h1 className='subHeading'>About Me</h1>
+        </div>
       </section>
+
     </div>
   )
 }
