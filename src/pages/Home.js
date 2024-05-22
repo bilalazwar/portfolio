@@ -4,6 +4,9 @@ import React, { useState, useEffect } from 'react';
 import HomeHeader from '../components/HomeHeader'
 import '../style/home.css'
 import Bilal from'../images/roundImage.png'
+import Linkedin from'../images/linkedin.png'
+import Github from'../images/github.png'
+import Medium from'../images/medium.png'
 
 
 export default function Home() {
@@ -30,11 +33,26 @@ export default function Home() {
                   <label id='btnContactMe'>Contact Me</label>
                 </div>
 
+                <div id='socialMedia'>
+
+                  <a href="https://www.linkedin.com/in/bilal-azwar/" id='linkedin' ><img src={Linkedin} alt="Linkedin"/></a>
+                  <a id='github' href="https://github.com/bilalazwar"><img src={Github} alt="Github"/></a>
+                  <a id='medium' href="https://medium.com/@bilalazwar"><img src={Medium} alt="Medium"/></a>
+
+                </div>
+
             </div>
           </div>
-          <div className='turnLine'>
-              <div id="horizontalLine"></div>
+
+          <div className='About'>
+            
+                  <h3>Get To Know More</h3>
+                  <h1>About Me</h1>
           </div>
+
+      </section>
+
+      <section className='contactInformation'>
 
       </section>
     </div>

@@ -4,16 +4,26 @@
 *{
     /* border: 5px; */
 }
-.landingContent{
+/* .landingContent{
     height: 91vh;
     width: 100%;
-    background-color: rgba(248,249,251,255);
-
+    background-color: rgba(248,249,251,255);  background color 
+    
     background-image: url('../images/bill3.png');
     background-repeat: no-repeat;
     background-position: 56.05vw 7.74vw;
     background-size: 39.34vw;
     border-top: 2px black solid;
+} */
+.landingContent{
+    height: 91vh;
+    width: 100%;
+    
+    background-image: url('../images/bill3.png'), url('../images/landingBackImg.png'); /* Combine both images */
+    background-repeat: no-repeat, no-repeat; /* Prevent tiling */
+    background-position: 56.05vw 7.74vw, center center; /* Position both images */
+    background-size: 39.34vw, cover; /* Set sizes for both images */
+    filter: blur(5px) rgba(0, 0, 0, 0.5);
 
 }
 
@@ -95,6 +105,26 @@
         font-size: 1.2rem;
         margin-right: 1.5rem;
     }
+    #btnContactMe:hover{
+        background-color: white;
+    }
+
+    #socialMedia{
+        margin-top: 5vh;
+        display: flex;
+        margin-left: 5.1vw;
+    }
+    #linkedin{
+        margin-left: 0.1vw;
+    }
+    #github{
+        margin-left: 0.8vw;
+    }
+    #medium{
+        margin-left: 0.8vw;
+    }
+
+
     
 }
 
@@ -102,6 +132,16 @@
 @media screen and (width < 973px) {
     .landingContent {
       background-image: none; /* Remove background image */
+
+      /* background-image: url('../images/mobileLandingImg.png');
+      background-repeat: no-repeat;
+      background-size: cover; */
+
+      background-image: url('../images/mobileLandingImg.png');
+    background-repeat: no-repeat;
+    background-position: center center; /* Center the background image */
+    background-size: cover;
+    
     }
     .profile{
         display: flex;
@@ -143,6 +183,13 @@
         font-size: 1rem;
     }
 
+
+    #socialMedia{
+        margin-top: 2.7vh;
+        display: flex;
+        margin-left: 15vw;
+    }
+
 }
 
 /* 
@@ -157,7 +204,6 @@ when in another device default browser size in 15 px then adjust according to th
 }
 #horizontalLine{
     
-
     width: 100px;
     height: 5px;
     background-color: black;
