@@ -140,7 +140,7 @@
 /* less than */
 @media screen and (width < 973px) {
     .landingContent{
-        height: 63vh;
+        height: 85vh;
         /* border-bottom: 1px solid black; */
         /* background-color: antiquewhite; */
     }
