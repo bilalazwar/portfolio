@@ -54,6 +54,45 @@ export default function Home() {
         </div>
       </section>
 
+      <section className='education'>
+        
+        <div className='container'>
+          <h1>Education</h1>
+
+          <div className='line'></div>
+          <p className='educationHeading'><span className='semiBold'>NIBM - Colombo</span> <span className='year'>2021-2025</span></p>
+          <p className='additionalInfo'>- BSc (Hons) in Computing</p>
+          <p className='additionalInfo'>- CGPA : 3.8</p>
+
+          <div className='line'></div>
+          <p className='educationHeading'><span className='semiBold'>Hejaaz International</span><span className='year'>2015-2021</span></p>
+          <p className='additionalInfo'>- GCE Ordinary Level 2020/21</p>
+          <p className='additionalInfo'>- Results 4A & 2C</p>
+
+          <div className='line'></div>
+          <p className='educationHeading'><span className='semiBold'>Isipathana College</span><span className='year'>2010-2015</span></p>
+          <p className='additionalInfo'>- Primary Education</p>
+
+          <div className='line'></div>
+        </div>
+      </section>
+
+      <section className='familiarTechnologies'>
+        
+      </section>
+
+      <section className='recentProjects'>
+
+        
+      </section>
+
+      <section className='connectWithMeOn'>
+        {/* few social media links */}
+        
+      </section>
+
+
+
     </div>
   )
 }
