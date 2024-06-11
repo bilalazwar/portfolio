@@ -84,22 +84,31 @@ export default function Home() {
 
       <section className='recentProjects'>
 
-        <div className='container'>
-          <h5 className='subHeadingDesc'>Browse My Recent</h5>
-          <h1 className='subHeading'>Projects</h1>
-        </div>
+      <div className='container'>
+          <div className='headingContainer'>
+            <h5 className='subHeadingDesc'>Browse My Recent</h5>
+            <h1 className='subHeading'>Projects</h1>
+          </div>
 
-        <div className='project projectOne'>
-          <h3>Crafts Of Ceylon</h3>
-        </div>
+          <div className='project projectOne'>
+            <div className='projectFirstLine'>
+              <h3>Crafts Of Ceylon</h3>
+              <h5><span>Spring Boot</span><span>MySQL</span><span>React</span><span>RestAPIs</span><span>MicroService</span></h5>
+            </div>
+            <p>E-commerce platform facilitating online sales of Sri Lankan crafts, To empower local artisans and connect them with global customers.</p>
+          </div>
 
-        <div className='project projectTwo'>
-          <h3>Car Wash Back-End</h3>
-        </div>
+          <div className='project projectTwo'>
+            <div className='projectFirstLine'>
+              <h3>Car Wash Back-End</h3>
+              <h5><span>MERN-Stack</span></h5>
+            </div>
+          </div>
 
-        <div className='project projectThree'>
-          <h3>Hameedia Apparel Production </h3>
-        </div>
+          <div className='project projectThree'>
+            <h3>Hameedia Apparel Production </h3>
+          </div>
+      </div>
         
       </section>
 
