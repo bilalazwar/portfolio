@@ -10,7 +10,7 @@ import Medium from'../images/medium.png'
 
 
 export default function Home() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   return (
     <div>
       <HomeHeader/>
@@ -24,8 +24,8 @@ export default function Home() {
             <div className='call'>
                 <p id='hi'>Hi, I am</p>
                 <h1 id='name'>Bilal Azwar</h1>
-                <p id='position'>Software Engineer</p>
-                <p id='description'>I code to turn simple things to reality and love what I do.</p>
+                <p id='position'>BSc (Hons) Computing undergraduate</p>
+                <p id='description'>I love crafting clean code that solves real-world problems.</p>
                 {/* <h5>{windowWidth}</h5> */}
 
                 <div className='btn'>
@@ -45,13 +45,18 @@ export default function Home() {
           </div>
       </section>
 
-      <section className='contactInformation'>
-        
-        <div className='about'>
-              
-              <h5 className='subHeadingDesc'>Get To Know More</h5>
-              <h1 className='subHeading'>About Me</h1>
+      <section className='about'>
+
+        <div className='container'>
+          <h5 className='subHeadingDesc'>Get To Know More</h5>
+          <h1 className='subHeading'>About Me</h1>
         </div>
+        <div className='container'>
+            <p>A passionate individual eager to learn and contribute as an intern!
+            fascinated by new technologies and thrive in collaborative environments, 
+            always seeking the best solutions alongside a strong team. Let's connect and see how I can help your team succeed!</p>
+        </div>
+
       </section>
 
       <section className='education'>
@@ -77,14 +82,30 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='familiarTechnologies'>
-        
-      </section>
-
       <section className='recentProjects'>
 
+        <div className='container'>
+          <h5 className='subHeadingDesc'>Browse My Recent</h5>
+          <h1 className='subHeading'>Projects</h1>
+        </div>
+
+        <div className='project projectOne'>
+          <h3>Crafts Of Ceylon</h3>
+        </div>
+
+        <div className='project projectTwo'>
+          <h3>Car Wash Back-End</h3>
+        </div>
+
+        <div className='project projectThree'>
+          <h3>Hameedia Apparel Production </h3>
+        </div>
         
       </section>
+
+      <section className='familiarTechnologies'>
+      </section>
+
 
       <section className='connectWithMeOn'>
         {/* few social media links */}
