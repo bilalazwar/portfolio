@@ -7,6 +7,7 @@ import Bilal from'../images/roundImage.png'
 import Linkedin from'../images/linkedin.png'
 import Github from'../images/github.png'
 import Medium from'../images/medium.png'
+import P1Home from  '../images/p1-2.png'
 
 
 export default function Home() {
@@ -82,35 +83,68 @@ export default function Home() {
         </div>
       </section>
 
+
       <section className='recentProjects'>
 
       <div className='container'>
+
           <div className='headingContainer'>
             <h5 className='subHeadingDesc'>Browse My Recent</h5>
             <h1 className='subHeading'>Projects</h1>
           </div>
 
           <div className='project projectOne'>
-            <div className='projectFirstLine'>
-              <h3>Crafts Of Ceylon</h3>
-              <h5><span>Spring Boot</span><span>MySQL</span><span>React</span><span>RestAPIs</span><span>MicroService</span></h5>
+            <div className='picture'>
+              <img src={P1Home} alt="craft-of-ceylon Home page"/>
             </div>
-            <p>E-commerce platform facilitating online sales of Sri Lankan crafts, To empower local artisans and connect them with global customers.</p>
+            <div className='projectDescription'>
+              <div className='lineOne'>
+                <h3 className='projectHeading'>Crafts Of Ceylon</h3>
+                <p><span>Spring-Boot</span><span>MySQL</span><span>React</span><span>RestAPIs</span><span>MicroService</span></p>
+              </div>
+              <div>
+                <p>E-commerce platform facilitating online sales of Sri Lankan crafts, To empower local artisans and connect them with global customers.</p>
+              </div>
+            </div>
           </div>
 
           <div className='project projectTwo'>
-            <div className='projectFirstLine'>
-              <h3>Car Wash Back-End</h3>
-              <h5><span>MERN-Stack</span></h5>
+            <div className='picture'>
+              <img src={P1Home} alt="Flavourites home pahe"/>
+            </div>
+            <div className='projectDescription'>
+              <div className='lineOne'>
+                <h3 className='projectHeading'>Flavourites</h3>
+                <p><span>MERN Stack</span></p>
+              </div>
+              <div>
+                <p>I helped build the backend of a web application where anyone can share their favorite recipes! This involved using Node.js, Express.js, and 
+                   MySQL to create a robust system </p>
+              </div>
             </div>
           </div>
 
           <div className='project projectThree'>
-            <h3>Hameedia Apparel Production </h3>
+            <div className='picture'>
+              <img src={P1Home} alt="craft-of-ceylon Home page"/>
+            </div>
+            <div className='projectDescription'>
+              <div className='lineOne'>
+                <h3 className='projectHeading'>Hameedia Apparel Production System</h3>
+                <p><span>C#</span><span>ASP.net</span><span>MySQL</span><span>RestAPIs</span><span>Monolithic</span></p>
+              </div>
+              <div>
+                <p>A Software Design Document created based on several visits to their workplace, which includes all necessary diagrams like class diagrams, 
+                   user interface, use case diagram, ER diagram, sequence diagrams along with the proposed application's interface designs.</p>
+              </div>
+            </div>
           </div>
+
       </div>
-        
+
       </section>
+
+
 
       <section className='familiarTechnologies'>
       </section>

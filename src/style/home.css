@@ -95,34 +95,6 @@
 
 
 
-
-.recentProjects{
-    width: 100%;
-    height: 45vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.recentProjects .container{
-    width: 55%;
-    border: 1px solid black;
-}
-.recentProjects .headingContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.recentProjects .project{
-    background-color: rgb(230, 218, 203);
-    margin-bottom: 1rem;
-    border-radius: 4px;
-    padding: 9px;
-}
-
-
-
-
 /* greater than */
 @media screen and (width > 973px) {
     .landingContent{
@@ -198,7 +170,8 @@
         opacity: 0.85;
     }
     .about .subHeading{
-        margin-bottom: 40px;
+        /* margin-bottom: 40px; */
+        margin-bottom: 2.5rem;
         font-size: 1.6rem;
     }
     .about .container p{
@@ -214,8 +187,8 @@
     .education{
         width: 100%;
         height: 50vh;
-        /* background-color: rgb(151, 151, 144); */
-        border: 1px solid black;
+        background-color: rgba(228,231,240,255);
+        /* border: 1px solid black; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -266,6 +239,75 @@
         font-size: 1.1rem;
     }
 
+
+
+
+    .recentProjects{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .recentProjects .container{
+        width: 55%;
+        /* border: 1px black solid; */
+        
+    }
+    .recentProjects .container .headingContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 2.5rem 0 2.5rem 0;
+    }
+    .recentProjects .container .headingContainer .subHeadingDesc{
+        font-size: 1.2rem;
+        opacity: 0.85;
+    }
+    .recentProjects .container .headingContainer .subHeading{
+        font-size: 1.6rem;
+        /* border: 1px solid black; */
+    }
+    
+    .recentProjects .container .project{
+        display: flex;
+        /* flex-direction: column; */
+        /* border: 0.5px solid black; */
+        box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        margin-bottom: 1.5rem;
+        background-color: rgba(228,231,240,255);
+        padding: 1rem;
+    }
+    .recentProjects .container .project .projectDescription{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 1.2rem;
+    }
+    .recentProjects .container .project .picture img{
+        width: 11.25rem;
+        border-radius: 5px;
+    }
+    .projectDescription .lineOne{
+        display: flex;
+    }
+    .projectDescription .lineOne h3{
+
+    }
+    .projectDescription .lineOne p span{
+
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 0.88rem;
+        opacity: 90%;
+        
+        padding: 0px 5px 0px 5px;
+        background-color: burlywood;
+        margin-left: 0.56rem;
+        border-radius: 4px;
+    }
 
 
 }
@@ -351,12 +393,14 @@
     }
     .about{
         width: 100%;
-        height: 50vh;
+        height: 40vh;
         /* border: black 1px solid; */
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         margin-bottom: 5.5vh;
+        background-color: rgba(228,231,240,255);
   
     }
     .about .container{
@@ -418,6 +462,46 @@
         font-size: 14px;
     }
 
+
+    .recentProjects{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .recentProjects .container{
+        width: 75%;
+        border: 1px solid black;
+    }
+
+    .recentProjects .container .project .picture{
+        display: none;
+    }
+
+    .recentProjects .container .headingContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recentProjects .container .project{
+        background-color: rgba(228,231,240,255);
+        margin-bottom: 1rem;
+        padding: 5px;
+    }
+
+    .projectDescription .lineOne p span{
+
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 0.5rem;
+        opacity: 90%;
+        
+        padding: 0px 5px 0px 5px;
+        background-color: burlywood;
+        margin-right: 0.56rem;
+        border-radius: 4px;
+    }
     
 
 }
