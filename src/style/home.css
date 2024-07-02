@@ -74,6 +74,8 @@
     font-weight: bolder;
     border-radius: 20px;
     align-items: center;
+    user-select: none; /* Disables text selection */
+    outline: none;  /* Remove the blue highlight */
 }
 #btnDownloadCv{
     background-color:rgb(255, 148, 66);
@@ -211,11 +213,6 @@
         font-size: 1.6rem;
 
     }
-    .education .line{
-        border-bottom: 0.5px solid black;
-        margin-top: 2vh;
-        margin-bottom: 2vh;
-    }
     .container p{
         font-family: "Poppins";
         font-weight: 400;
@@ -244,7 +241,7 @@
 
     .recentProjects{
         width: 100%;
-        height: 70vh;
+        height: 73vh;
         display: flex;
         justify-content: center;
         
@@ -274,11 +271,13 @@
         display: flex;
         /* flex-direction: column; */
         /* border: 0.5px solid black; */
-        box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+        border: 2.5px solid rgb(131, 130, 130);
         border-radius: 5px;
         margin-bottom: 1.5rem;
         background-color: rgba(228,231,240,255);
         padding: 1rem;
+        cursor: pointer;
     }
     .recentProjects .container .project .projectDescription{
         display: flex;
@@ -308,6 +307,142 @@
         margin-left: 0.56rem;
         border-radius: 4px;
     }
+
+
+
+    
+    .contactMe{
+        width: 100%;
+        box-sizing: border-box;
+        height: 45vh;
+        background-color: rgba(228,231,240,255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactMe .contactMeLinks{
+        width: 30%;
+        /* border: 1px solid black; */
+    }
+    .contactMe .contactMeLinks .subHeading{
+        margin-bottom: 1.5rem;
+    }
+    .contactMe .contactMeForm{
+        width: 30%;
+        /* border: 1px solid black; */
+    }
+    .contactMe .contactMeLinks h1{
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+    }
+    .contactMe .contactMeLinks .emailAndPhone{
+        /* border: 0.5px solid grey; */
+        /* width: 40%; */
+        list-style: none;
+        font-size: 1.3rem;
+        text-align: justify;
+        padding: 1.2rem;
+    }
+    .contactMe .contactMeLinks .emailAndPhone h4{
+        opacity: 95%;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    .contactMe .contactMeLinks .emailAndPhone p{
+        margin-bottom: 1.5rem;
+        font-family: "Poppins";
+        font-weight: 400;
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+    .contactMe .contactMeLinks .emailAndPhone li a{
+        margin-left: 1rem;     
+    }
+    .contactMe .contactMeLinks .emailAndPhone li{
+        display: flex;
+        align-items: center;
+        width: 49%;
+        /* border: 0.5px solid black; */
+    }
+    .contactMe .contactMeLinks .socialMediaLinks{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1.2rem;
+        width: 44%;
+        /* border: 0.2px solid green; */
+        margin-top: 2.3rem;
+    }
+    .contactMe .contactMeLinks .socialMediaLinks img{
+        width: 2.2rem;
+    }
+
+
+
+    .contactMe .contactMeForm{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        /* border: 1px solid black; */
+    }
+
+    .contactMe .contactMeForm input[TYPE="text"], .contactMe .contactMeForm input[TYPE="email"], #FormDescription{
+        padding: 0.8rem;
+        border-radius: 0.5rem;
+        margin-bottom: 0.9rem;
+        font-size: 1rem;
+        /* border: 1px solid rgb(94, 92, 92); */
+
+    }
+    #FormDescription{
+        height: 6rem;
+    }
+
+    .contactMe .contactMeForm .contactMeFirstLine{
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+    }
+    .contactMe .contactMeForm .contactMeFirstLine input[TYPE="text"], .contactMe .contactMeForm .contactMeFirstLine input[TYPE="email"]{
+        width: 43%;
+        border: 2px solid rgb(122, 122, 122);
+    }
+    .contactMe .contactMeForm input[TYPE="text"] ,#FormDescription{
+        border: 2px solid rgb(122, 122, 122);
+    }
+    #submitButton{
+        padding: 0.8rem;
+        margin-top: 0.5rem;
+        color: rgb(34, 34, 34);
+        border-radius: 0.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        background-color:rgb(172, 172, 172);
+        border: 2px solid rgb(122, 122, 122);
+        font-size: 1.4rem;
+    }
+    #submitButton:hover{
+        background-color:rgb(110, 110, 110);
+        cursor: pointer;
+        color: black;
+    }
+
+
+
+    footer{
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(56, 54, 54);
+    }
+    footer p{
+        color: rgb(247, 247, 247);
+    }
+    /* footer p img{
+        width: 14px;
+    } */
 
 
 }
@@ -370,9 +505,11 @@
     }
     #btnDownloadCv , #btnContactMe{
         font-size: 1rem;
+        cursor: pointer;
     }
     #btnContactMe{
         background-color: aliceblue;
+        cursor: pointer;
     }
 
 
@@ -463,15 +600,21 @@
     }
 
 
+
     .recentProjects{
         width: 100%;
         display: flex;
         justify-content: center;
+        background-color: rgba(228,231,240,255);
     }
 
     .recentProjects .container{
+        
         width: 75%;
-        border: 1px solid black;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        /* border: 1px solid black; */
+        background-color: rgba(228,231,240,255);
     }
 
     .recentProjects .container .project .picture{
@@ -482,27 +625,124 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 2rem;
     }
 
     .recentProjects .container .project{
-        background-color: rgba(228,231,240,255);
+        background-color: rgba(80, 80, 80, 255);
         margin-bottom: 1rem;
-        padding: 5px;
+        padding: 0.4rem;
+        border-radius: 10px;
+        /* border: 1px solid black; */
+        cursor: pointer;
+
+        /* box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+        border: 2.5px solid rgb(131, 130, 130);
+        border-radius: 5px;
+        margin-bottom: 1.5rem;
+        background-color: rgba(228,231,240,255);
+        padding: 1rem; */
+    }
+    .recentProjects .container .project h3, .recentProjects .container .project .projectAbout{
+        color: white;
     }
 
-    .projectDescription .lineOne p span{
+    .project .projectDescription .lineOne p span{
 
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 0.5rem;
         opacity: 90%;
         
-        padding: 0px 5px 0px 5px;
+        padding: 3px 5px 3px 5px;
         background-color: burlywood;
         margin-right: 0.56rem;
         border-radius: 4px;
     }
+    .recentProjects .project .projectAbout{
+        font-size: 14px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: justify;
+        font-weight: 300;
+        margin-top: 0.5rem;
+    }
+
+
+
+
+    .contactMe{
+        width: 100%;
+        height: 52vh;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .contactMe .contactMeLinks , .contactMe .contactMeForm{
+        width: 75%;
+        /* border: 1px solid black; */
+    }
+    .contactMe .contactMeLinks .subHeading{
+        width: 100%;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+    }
+    .contactMe .contactMeForm{
+        display: none;
+    }
+    .contactMe .contactMeLinks .socialMediaLinks{
+        width: 80%;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .contactMe .contactMeLinks .emailAndPhone{
+        list-style: none;
+    }
+    .contactMe .contactMeLinks .emailAndPhone h4{
+        margin: 15px 0 10px 0;
+        opacity: 94%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .contactMe .contactMeLinks .emailAndPhone p{
+        /* font-family: "Poppins"; */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        opacity: 0.8;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+    .contactMe .contactMeLinks .emailAndPhone li{
+        display: flex;
+        align-items: center;
+    }
+    .contactMe .contactMeLinks .emailAndPhone li a{
+        margin-left: 8px;
+    }
+    .contactMe .contactMeLinks .socialMediaLinks img{
+        width: 38px;
+    }
     
+
+    footer{
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(56, 54, 54);
+    }
+    footer p{
+        font-size: 0.63rem;
+        color: white;
+    }
+    footer p img{
+        width: 0.68rem;
+    }
 
 }
 

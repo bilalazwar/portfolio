@@ -34,6 +34,8 @@ a{
     /* Here in css instead of NavLink we use a (anchor) tag to refer NavLink */
     text-decoration: none;
     color: rgb(90, 89, 89);
+}
+.fullHomeHeader a{
     margin-left: 2.8vw;
 }
 
